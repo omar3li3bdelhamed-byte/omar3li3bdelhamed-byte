@@ -119,7 +119,7 @@ I sit where business and data meet. I turn operational data into dashboards, KPI
 
 - **1st Place Nationwide**, Microsoft Power BI Track, Digital Egypt Pioneers Initiative (DEPI)
 - **1st Place in the Delta Region** with a startup project
-- **2nd Place**, Tanta Hackathon
+- **1nd Place**, Tanta Hackathon
 - Developed **two internal business systems** supporting HR and TeleSales operations
 - Built an **end-to-end HR data platform** covering data collection, ETL, data warehousing, data marts and BI dashboards
 
