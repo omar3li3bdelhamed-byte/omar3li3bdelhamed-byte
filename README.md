@@ -127,3 +127,4 @@ I'm always happy to talk about data analytics, business intelligence and data en
 <p align="center">
   <img src="assets/footer.png" alt="Thanks for visiting!" width="100%"/>
 </p>
+
