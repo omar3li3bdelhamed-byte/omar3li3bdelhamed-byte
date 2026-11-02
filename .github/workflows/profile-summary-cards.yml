@@ -1,0 +1,31 @@
+name: Update profile summary cards
+
+on:
+  schedule:
+    - cron: "43 3 * * *" # daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/profile-summary-cards.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats and language cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Uses the built-in token. If some cards are missing, create a
+          # personal access token, save it as the repository secret
+          # SUMMARY_GITHUB_TOKEN and replace the value below with:
+          # ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 2
